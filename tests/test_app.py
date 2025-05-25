@@ -1,6 +1,6 @@
 import unittest
 import json
-from app import poem_summary
+from app.app import poem_summary
 
 class AgenticSummaryTest(unittest.TestCase):
 
