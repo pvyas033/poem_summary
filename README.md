@@ -78,6 +78,11 @@ native_back = translateEnglishToNative("Hello world", "hi")
 
 ---
 
+> ⚠️ Note: This project is not an agent yet. It's a foundation toward building agentic AI — modular microservices that may later evolve into goal-driven, autonomous systems.
+
+
+---
+
 ## Powered By
 
 - HuggingFace Transformers  
