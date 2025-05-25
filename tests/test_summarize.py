@@ -1,4 +1,4 @@
-from app import summarize
+from services.summarize import summarize
 
 def test_summarize_short_text():
     text = ("The Eiffel Tower is one of the most iconic landmarks in Paris, "

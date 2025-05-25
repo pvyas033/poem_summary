@@ -1,0 +1,49 @@
+# Bytecode files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# IDE config
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test/cache
+*.log
+*.tmp
+*.bak
+*.swp
+*.coverage
+coverage.xml
+.cache/
+pytest_cache/
+.pytest_cache/
+
+# Notebooks and data
+*.ipynb_checkpoints
+*.csv
+*.tsv
+*.json
+*.h5
+*.pickle
+*.pkl
+
+# Model and output
+*.pt
+*.onnx
+*.joblib
+
+# GitHub Actions
+.github/workflows/*.bak
+
+# Environment files
+.env
+.env.*
