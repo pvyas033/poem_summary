@@ -1,4 +1,4 @@
-from app import translateNativeToEnglish, translateEnglishToNative
+from services.translate import translateNativeToEnglish, translateEnglishToNative
 
 def test_translate_hindi_to_english():
     text = "नमस्ते दुनिया"
