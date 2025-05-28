@@ -1,6 +1,6 @@
 import unittest
 import json
-from app.app import poem_summary
+from app.poem_summary import poem_summary
 
 class AgenticSummaryTest(unittest.TestCase):
 
@@ -13,7 +13,7 @@ class AgenticSummaryTest(unittest.TestCase):
             "poem" : "शिक्षण से दरिद्रता हटाई जा सकती है, ुस्तकों से अपेक्षा लगाई जा सकती है"
         }
 
-        response = self.app.post('/agentic-summary',
+        response = self.app.post('/v1/summary-poem',
                                  data=json.dumps(payload),
                                  content_type='application/json')
 
@@ -28,7 +28,7 @@ class AgenticSummaryTest(unittest.TestCase):
     def test_agentic_summary_invalid_inputs(self):
         payload = {"poem": "   "}  # whitespace-only
 
-        response = self.app.post('/agentic-summary',
+        response = self.app.post('/v1/summary-poem',
                                  data=json.dumps(payload),
                                  content_type='application/json')
 
